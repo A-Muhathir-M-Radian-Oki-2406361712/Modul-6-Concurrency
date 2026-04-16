@@ -4,3 +4,7 @@ Membangun web server secara manual di Rust memberikan gambaran praktis tentang c
 **Milestone 2 Reflection Notes**
 ![Commit 2 screen capture](images/commit2.png)
 Menambahkan implementasi fungsi sehingga port menampilkan html.
+
+**Milestone 3 Reflection Notes**
+![Commit 3 screen capture](images/commit3.png)
+Menambahkan implementasi error handling ketika resource tidak ditemukan.
