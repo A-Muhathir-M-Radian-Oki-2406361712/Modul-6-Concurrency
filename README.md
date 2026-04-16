@@ -10,4 +10,7 @@ Menambahkan implementasi fungsi sehingga port menampilkan html.<br>
 Menambahkan implementasi error handling ketika resource tidak ditemukan.<br>
 
 **Milestone 4 Reflection Notes**<br>
-Penggunaan thread-sleep biasanya untuk handle deadlock atau kondisi lainnya, di commit ini hanya digunakan sebagai testing saja (sleep 10 detik).
+Penggunaan thread-sleep biasanya untuk handle deadlock atau kondisi lainnya, di commit ini hanya digunakan sebagai testing saja (sleep 10 detik).<br>
+
+**Milestone 5 Reflection Notes**
+Penggunaan Thread Pool membuat server lebih stabil dengan membatasi jumlah thread pekerja, sehingga memori tidak jebol akibat pembuatan pekerja baru setiap kali ada request masuk. Sebagai gantinya, kita cukup menyiapkan beberapa pekerja tetap di awal yang bersiaga memantau satu antrean tugas (channel), sehingga saat ada request baru, tugas tersebut tinggal dilempar ke antrean untuk langsung dieksekusi secara bergantian oleh pekerja mana pun yang sedang menganggur.
